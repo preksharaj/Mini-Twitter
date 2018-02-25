@@ -37,6 +37,12 @@ Password :  pwd from people table
 
 Example : Username :  neha  , Password : neha1
 
+#### Postman 
+
+Once the Spring boot application launches, open Postman. Select Basic authentication. Username of any person can be typed in from the people table(handle of the user from the person table). For password, use the default pwd of that user from the perosn table.
+
+Once username and password have been entered, click preview which will update the geaders and each endpoint can tested with urls listed below with the appropriate request methods.
+
 #### Messages
 An endpoint to read the message list for the current user (as identified by their HTTP Basic authentication credentials). Include messages they have sent and messages sent by users they follow. 
 
@@ -100,3 +106,15 @@ Request Method : GET
 
 URL: http://localhost:8080/people/popular
 
+#### Table of endpoints
+
+| Methods | Resource | Description |
+| --- | --- | --- |
+| GET | http://localhost:8080/people | View all users. |
+| GET | http://localhost:8080/message | View messages by the current user. |
+| GET | http://localhost:8080/message/search={keyword} | View messages by the current user with search. |
+| GET | http://localhost:8080/people/following | View people the user is currently following. |
+| GET | http://localhost:8080/people/followers | View followers of the user. |
+| POST | http://localhost:8080/people/follow/{handle} | Follow another user(Handle of the user you want to follow). |
+| POST | http://localhost:8080/people/unfollow/{handle} | Unfollow another use(Handle of the user you want to unfollow). |
+| GET | http://localhost:8080/people/popular | List of users along with their popular followers. |
