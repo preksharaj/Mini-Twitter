@@ -37,6 +37,12 @@ Password :  pwd from people table
 
 Example : Username :  neha  , Password : neha1
 
+#### Postman 
+
+Once the Spring boot application launches, open Postman. Select Basic authentication. Username of any person can be typed in from the people table(handle of the user from the person table). For password, use the default pwd of that user from the perosn table.
+
+Once username and password have been entered, click preview which will update the geaders and each endpoint can tested with urls listed below with the appropriate request methods.
+
 #### Messages
 An endpoint to read the message list for the current user (as identified by their HTTP Basic authentication credentials). Include messages they have sent and messages sent by users they follow. 
 
