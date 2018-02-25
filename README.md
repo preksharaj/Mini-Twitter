@@ -106,3 +106,15 @@ Request Method : GET
 
 URL: http://localhost:8080/people/popular
 
+#### Table of endpoints
+
+| Methods | Resource | Description |
+| --- | --- | --- |
+| GET | http://localhost:8080/people | View all users. |
+| GET | http://localhost:8080/message | View messages by the current user. |
+| GET | http://localhost:8080/message/search={keyword} | View messages by the current user with search. |
+| GET | http://localhost:8080/people/following | View people the user is currently following. |
+| GET | http://localhost:8080/people/followers | View followers of the user. |
+| POST | http://localhost:8080/people/follow/{handle} | Follow another user(Handle of the user you want to follow). |
+| POST | http://localhost:8080/people/unfollow/{handle} | Unfollow another use(Handle of the user you want to unfollow). |
+| GET | http://localhost:8080/people/popular | List of users along with their popular followers. |
